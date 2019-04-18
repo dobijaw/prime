@@ -1,0 +1,8 @@
+p {
+  margin: 2rem 0;
+}
+
+blockquote {
+  @include font-style($font__secondary, 2.4rem, 400, 3.8rem, $color__primary);
+  margin: 3rem 1rem;
+}

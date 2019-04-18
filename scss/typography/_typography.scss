@@ -1,0 +1,11 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  @include font-style($font__main, 1.8rem, 300, 2.9rem, $color__dark);
+}
+
+@import "headings";
+@import "copy";

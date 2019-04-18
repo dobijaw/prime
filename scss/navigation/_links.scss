@@ -1,0 +1,52 @@
+a {
+  color: $color__primary;
+  text-decoration: none;
+  transition: .35s;
+
+  >h2 {
+    transition: .35s;
+  }
+
+  &:hover {
+    color: $color__primary-hover;
+    text-decoration: none;
+
+    >h2 {
+      color: $color__primary-hover;
+    }
+  }
+}
+
+.menu-items-large {
+  @include font-style($font__secondary, 2.4rem, 400, 5.4rem, $color__white);
+
+  a {
+    color: $color__white;
+
+    &:hover {
+      color: $color__primary-hover;
+    }
+  }
+}
+
+.menu-items-small {
+  @include font-style($font__secondary, 1.8rem, 400, 2.9rem, $color__dark-gray);
+  text-transform: capitalize;
+
+  li {
+    margin-bottom: .5rem;
+
+    a {
+      color: $color__dark-gray;
+      transition: .35s;
+
+      &:hover {
+        color: $color__white;
+      }
+    }
+  }
+}
+
+.menu-items-categories {
+  @include font-style($font__main, 1.8rem, 300, 4.1rem, $color__dark-gray);
+}

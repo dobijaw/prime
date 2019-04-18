@@ -1,0 +1,8 @@
+.date {
+  display: block;
+  @include font-style($font__main, 1.7rem, 300, 2.4rem, $color__dark-gray);
+}
+
+.post-date {
+  font-size: 1.6rem;
+}

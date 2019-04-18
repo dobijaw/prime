@@ -1,0 +1,32 @@
+@media only screen and (min-width: 844px) {
+
+  // Containers
+  .menu-content-container {
+    .container {
+      padding: 0;
+    }
+  }
+
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .menu-popular-categories {
+    display: block;
+  }
+
+  // Footer
+  .social-media {
+    margin: 0;
+
+    li {
+      margin-right: 12px;
+    }
+  }
+
+  // Article
+  .article-sticky-post {
+    padding: 0 71px;
+  }
+}

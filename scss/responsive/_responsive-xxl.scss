@@ -1,0 +1,41 @@
+@media only screen and (min-width: 992px) {
+
+  // Containers
+  .main-container {
+    margin-top: 184px;
+
+    &.active {
+      height: 100%;
+      overflow-y: scroll;
+    }
+  }
+
+  .nav {
+    @include position(fixed, 0, 0, auto, 0);
+    width: 100%;
+    z-index: 999;
+  }
+
+  .navbar-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  // Article
+  .article:nth-of-type(n+2) {
+    margin-top: 120px;
+  }
+
+  .load-more {
+    margin-top: 120px;
+    margin-bottom: 45px;
+
+    hr {
+      margin-bottom: 45px;
+    }
+  }
+
+  .article-sticky-post {
+    padding: 0 144px;
+  }
+}

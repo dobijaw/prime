@@ -1,0 +1,45 @@
+@media only screen and (min-width: 480px) {
+
+  // Containers
+  .menu-content-container {
+    .container {
+      padding: 0 80px;
+    }
+  }
+
+  .navbar-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .main-container {
+    margin-top: 137px;
+  }
+
+  // Navigation
+  .search input[type=search] {
+    &:hover {
+      width: 264px;
+    }
+
+    &:focus,
+    &:active {
+      width: 264px;
+    }
+  }
+
+  // Article
+  .article-sticky-post {
+    padding: 0 40px;
+
+    .container {
+      padding: 26px;
+      border-width: 14px;
+    }
+  }
+}

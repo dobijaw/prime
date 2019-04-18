@@ -1,0 +1,25 @@
+.article-results-page {
+  .article:nth-of-type(1) {
+    margin-top: 59px;
+  }
+
+  .article:last-of-type {
+    margin-bottom: 73px;
+  }
+}
+
+.result-section {
+  @include font-style($font__secondary, 2.4rem, 400, 3.2rem, $color__dark);
+
+  .tag-result::before {
+    content: "#";
+  }
+
+  .result {
+    margin-bottom: 5.4rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

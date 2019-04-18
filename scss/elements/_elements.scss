@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color__background;
+}
+
+hr {
+  height: 1px;
+  margin: 3rem 0;
+  border: 0;
+  background-color: $color__light;
+}
+
+@import "lists";
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@import "tables";

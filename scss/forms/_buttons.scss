@@ -1,0 +1,16 @@
+.btn {
+  padding: 0 40px;
+  border: 1px solid $color__primary;
+  border-radius: 50px;
+  @include font-style($font__main, 1.7rem, 300, 4.3rem, $color__primary);
+  text-transform: capitalize;
+  background-color: $color__white;
+
+  transition: .35s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color__primary;
+    color: $color__white;
+  }
+}

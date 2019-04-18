@@ -1,0 +1,41 @@
+ul.list-style,
+ol.list-style {
+  @include font-style($font__main, 1.8rem, 300, 2.9rem, $color__dark);
+  margin-left: 2rem;
+
+  >li:nth-of-type(n+2) {
+    margin-top: .5rem;
+  }
+
+  li>ul,
+  li>ol {
+    margin: 1.4rem auto 1.4rem 2rem;
+  }
+}
+
+ul.list-style {
+  list-style: disc;
+
+  li {
+    padding-left: .4rem;
+  }
+
+  li>ul,
+  li>ol {
+    list-style: disc;
+  }
+
+}
+
+ol.list-style {
+  list-style: decimal;
+
+  li {
+    padding-left: .5rem;
+  }
+
+  li>ul,
+  li>ol {
+    list-style: decimal;
+  }
+}

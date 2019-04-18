@@ -1,0 +1,102 @@
+// Article List Style
+
+.article-sticky-post {
+  .container {
+    overflow: hidden;
+    padding: 10px 10px 20px;
+    border: 10px solid $color__light;
+  }
+}
+
+.article {
+  background-color: $color__background;
+
+  &:nth-of-type(n+2) {
+    margin-top: 73px;
+  }
+
+  .date {
+    margin-top: 2.6rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 30px;
+}
+
+// Article Post
+// Header
+
+.post-info-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5.2rem;
+}
+
+.author-img {
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border-radius: 72px;
+}
+
+.post-info {
+  margin-left: 2rem;
+  line-height: 2.4rem;
+
+  .author-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}
+
+// Article Post
+// Main
+
+.img-post {
+  margin-top: 1.5rem;
+}
+
+.entire-article-text {
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tags {
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+// Article Post
+// Keep reading
+.keep-reading-section {
+  .article {
+    margin-top: 4.5rem;
+  }
+}
+
+.post-page {
+  hr {
+    margin: 5rem 0;
+  }
+}
+
+.comment-info {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+
+  .comment-author {
+    font-weight: 700;
+  }
+
+  .comment-hour,
+  .comment-date {
+    color: $color__dark-gray;
+  }
+}

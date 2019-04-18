@@ -1,0 +1,272 @@
+/* Navigation Navbar */
+
+
+.navbar-container {
+  @include position(fixed, 0, 0, auto, 0);
+  width: 100%;
+  z-index: 999;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $color__light;
+  background-color: $color__white;
+
+  &.active {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.logo {
+
+  &.active {
+    opacity: 0;
+  }
+
+  a>img {
+    display: block;
+  }
+}
+
+.nav-right-container {
+  position: relative;
+  min-height: 36px;
+}
+
+.search {
+  display: none;
+  @include position(absolute, 50%, 60px, auto, auto);
+  transform: translateY(-50%);
+  border-radius: 36px;
+  background-color: $color__light;
+  z-index: 999;
+
+  &::before {
+    content: url(../img/search-icon.svg);
+    @include position(absolute, 50%, 23px, auto, auto);
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    padding-bottom: 6px;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  input[type=search] {
+    position: relative;
+    width: 64px;
+    border: none;
+    appearance: none;
+    border-radius: 100px;
+    @include font-style($font__main, 1.6rem, 300, 36px, rgba(0, 0, 0, 0));
+    background-color: transparent;
+    transition: .35s;
+
+    &:hover {
+      padding-left: 22px;
+      padding-right: 56px;
+      width: 220px;
+
+      &::placeholder {
+        transition-delay: .1s;
+        opacity: 1;
+        color: $color__dark-gray;
+      }
+    }
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      display: none;
+    }
+
+    &::placeholder {
+      color: transparent;
+      opacity: 0;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+
+      &::-webkit-input-placeholder {
+        color: $color__dark-gray;
+      }
+
+      width: 220px;
+      padding-left: 22px;
+      padding-right: 56px;
+      color: $color__dark;
+
+      &::placeholder {
+        opacity: 1;
+
+      }
+    }
+  }
+}
+
+.burger {
+  @include position(absolute, 0, 0, 0, auto);
+  width: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999;
+
+  >span {
+    display: block;
+    width: 40px;
+    height: 1px;
+    margin: 7px 0;
+    background-color: $color__primary;
+    transition: .35s;
+  }
+
+  &:hover {
+
+    span {
+      background-color: $color__primary-hover;
+
+      &:first-child {
+        transform: scaleX(.9) translateY(1px);
+        transform-origin: center;
+      }
+
+      &:last-child {
+        transform: scaleX(.9) translateY(-1px);
+        transform-origin: center;
+      }
+    }
+  }
+
+  &.active {
+
+    >span {
+      margin: 0 auto;
+      width: 30px;
+
+      &:first-child {
+        transform: rotate(-45deg) translateY(1px);
+      }
+
+      &:last-child {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+/* Menu Content */
+.menu {
+  display: none;
+  @include position(absolute, 0, auto, auto, 0);
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  z-index: 998;
+  background-color: $color__background-oposite;
+
+  &.active {
+    display: block;
+  }
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.menu-content-container {
+  padding: 92px 0 44px;
+  flex-grow: 90;
+  display: flex;
+  align-items: center;
+
+  .container {
+    padding: 0 40px;
+  }
+}
+
+.menu-footer-container {
+  background-color: $color__background-oposite-dark;
+}
+
+.menu-items-large {
+  margin-bottom: 2.5rem;
+}
+
+.menu-popular-categories {
+  display: none;
+  margin-left: 20px;
+
+  h6 {
+    color: $color__white;
+    margin-top: 1.1rem;
+  }
+
+  .menu-items-categories {
+    margin-bottom: 2.1rem;
+  }
+
+}
+
+/* Menu Footer */
+
+.menu-footer {
+  padding: 30px 0;
+}
+
+.social-media {
+  margin: 0 auto 2rem;
+  @include clearfix();
+
+  li {
+    float: left;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      width: 48px;
+      height: 48px;
+      border: 1px solid $color__social-icons;
+      border-radius: 50px;
+      font-size: 1.8rem;
+      line-height: 48px;
+      text-align: center;
+      color: $color__white;
+
+      &:hover {
+        border-color: $color__social-icons;
+        background-color: $color__primary;
+      }
+    }
+  }
+}
+
+.copyrights {
+  font-size: 1.4rem;
+  color: $color__copyrights;
+
+  p {
+    margin: 0;
+
+    a {
+      padding: 5px 0;
+      color: $color__copyrights;
+      transition: .35s;
+
+
+      &:hover {
+        color: $color__white;
+      }
+    }
+  }
+}

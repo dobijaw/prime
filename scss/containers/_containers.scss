@@ -1,0 +1,39 @@
+.main-container {
+  margin-top: 117px;
+  margin-bottom: 30px;
+
+  &.active {
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 768px;
+}
+
+.navbar-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.img-container {
+  overflow: hidden;
+
+  a>img {
+    display: block;
+    width: 100%;
+    transform: scale(1);
+    transition: .6s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

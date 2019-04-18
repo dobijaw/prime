@@ -1,0 +1,22 @@
+table.table-style {
+  margin: 0 0 1.5rem;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $color__light;
+  color: $color__dark;
+
+  th {
+    background-color: $color__light;
+    color: $color__dark-gray;
+    border: 1px solid $color__gray;
+  }
+
+  td {
+    border: 1px solid $color__light;
+  }
+
+  th,
+  td {
+    padding: 1.5rem;
+  }
+}

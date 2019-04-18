@@ -1,0 +1,33 @@
+@import "buttons";
+@import "fields";
+
+.form {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+
+  label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: $color__dark;
+  }
+}
+
+.input-container {
+  min-height: 87px;
+  margin: 0;
+  padding: 1.3rem 3.1rem;
+  border: 1px solid $color__gray;
+  font-weight: 400;
+
+  &:nth-of-type(n+2) {
+    border-top: none;
+  }
+}
+
+.btn-container {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: $color__light;
+}

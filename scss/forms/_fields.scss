@@ -1,0 +1,18 @@
+.input {
+  font-family: $font__main;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  border: none;
+  background-color: $color__light;
+}
+
+.input-form,
+.textarea-form {
+  background-color: transparent;
+  width: 100%;
+}
+
+.textarea-form {
+  padding: 0;
+}

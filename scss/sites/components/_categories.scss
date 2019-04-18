@@ -1,0 +1,26 @@
+ul.categories {
+  @include clearfix();
+
+  >li {
+    float: left;
+
+    a {
+      margin-right: 1rem;
+      font-size: 1.7rem;
+    }
+
+    &::after {
+      content: "/";
+      color: $color__gray;
+      margin-right: 1rem;
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+}
+
+.main-categories {
+  @include font-style($font__secondary, 2.4rem, 400, 4.4rem, $color__primary);
+}
